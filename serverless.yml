@@ -1,0 +1,11 @@
+# you can add CloudFormation resource templates here
+resources:
+  Resources:
+    S3BucketResource:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: twittergpt
+  Outputs:
+    S3BucketOutput:
+      Description: "Description for the output"
+      Value: S3BucketResource
